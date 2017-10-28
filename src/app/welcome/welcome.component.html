@@ -1,0 +1,8 @@
+<div>
+  <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Enter your user name" #userInput>
+      </mat-form-field>
+      <a mat-raised-button type="submit" (click)="loadData(userInput.value)">Load Data</a>
+  </form>
+</div>
