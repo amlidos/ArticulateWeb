@@ -64,12 +64,14 @@ export class GraphsComponent implements OnInit {
         {
           values: wpm,      //values - represents the array of {x,y} data points
           key: 'WPM', //key  - the name of the series.
-          color: '#ff7f0e'  //color - optional: choose your own line color.
+          color: '#ff7f0e',  //color - optional: choose your own line color.
+          area: true
         },
         {
           values: cos,
           key: 'Filler Words',
-          color: '#2ca02c'
+          color: '#2ca02c',
+          area: true
         },
         {
           values: sin2,
