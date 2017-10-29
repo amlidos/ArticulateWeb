@@ -6,16 +6,16 @@
         <div *ngIf="userName == speech.user">
           <h2>{{ speech.name }}</h2>
           <div *ngFor="let recording of recordings; let i = index">
-            <div *ngIf="speech.recordings.includes(recording._id)">
+            <div *ngIf="speech._id == recording.speech">
               <h3>Recording {{i+1}}</h3>
               <p>Presentation Length: {{recording.duration}}</p>
-              <p>Filler Words Used: {{recording.filler}}</p>
+              <p>Words per Minute: {{recording.filler}}</p>
               <p>Word Count: {{recording.wordCount}}</p>
             </div>
           </div>
         </div>
       </div>
-    <h1>Filler Words Used Per Recording</h1>
+    <p>Words Per Minute per Recording</p>
     <!-- </ul> -->
     <div class="col-md-6">
       <canvas baseChart

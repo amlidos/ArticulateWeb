@@ -48,7 +48,7 @@ export class GraphsComponent implements OnInit {
     });    
 
     this.userDataService.getRecordings().subscribe(res => {console.log(res); this.recordings = res.data;
-      let fillerData: DataObj = {data: [], label: "Filler Words"};
+      let fillerData: DataObj = {data: [], label: "WPM"};
       console.log(this.recordings);
       for(let i = 0; i < this.recordings.length; ++i){
         fillerData.data.push(+this.recordings[i].filler);
