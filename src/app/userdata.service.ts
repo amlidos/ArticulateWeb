@@ -15,8 +15,13 @@ export class UserdataService {
     this.username = username;
   }
 
-  getUsers() {
+  getSpeeches() {
     return this.http.get<Data>("/api/speeches")
+      .map(result => this.result = result);
+  }
+
+  getRecordings() {
+    return this.http.get<Data>("/api/recordings")
       .map(result => this.result = result);
   }
 

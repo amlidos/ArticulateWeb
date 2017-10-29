@@ -42,4 +42,19 @@ router.get('/speeches', (req, res) => {
     });
 });
 
+router.get('/recordings', (req, res) => {
+    connection((db) => {
+        db.collection('recording')
+            .find()
+            .toArray()
+            .then((users) => {
+                response.data = users;
+                res.json(response);
+            })
+            .catch((err) => {
+                sendError(err, res);
+            });
+    });
+});
+
 module.exports = router;
