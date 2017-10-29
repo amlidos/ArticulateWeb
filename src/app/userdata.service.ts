@@ -16,7 +16,7 @@ export class UserdataService {
   }
 
   getUsers() {
-    return this.http.get<Data>("/api/users")
+    return this.http.get<Data>("/api/speeches")
       .map(result => this.result = result);
   }
 

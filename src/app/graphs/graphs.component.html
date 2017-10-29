@@ -1,7 +1,9 @@
 <div>
   <h1>{{userName}}</h1>
   <ul>
-    <li *ngFor="let user of users">{{ user.name }}</li>
+    <li *ngFor="let speech of speeches">
+      <p *ngIf="userName == speech.user">{{ speech.name }}</p>
+    </li>
   </ul>
   <nvd3 [options]="options" [data]="data"></nvd3>
 </div>

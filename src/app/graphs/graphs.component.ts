@@ -11,13 +11,13 @@ export class GraphsComponent implements OnInit {
   data;
   chartType;
   userName: String;
-  users: any;
+  speeches: any;
 
   constructor(private userDataService: UserdataService) { }
 
   ngOnInit() {
     this.userName = this.userDataService.getUser();
-    this.userDataService.getUsers().subscribe(res => {console.log(res); this.users = res.data})
+    this.userDataService.getUsers().subscribe(res => {console.log(res); this.speeches = res.data})
     this.options = {
         chart: {
           type: 'lineChart',
