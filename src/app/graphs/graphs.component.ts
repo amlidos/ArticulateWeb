@@ -49,11 +49,11 @@ export class GraphsComponent implements OnInit {
     
     
     sinAndCos() {
-      var sin = [],sin2 = [],
-        cos = [];
-    
+      var sin = [], sin2 = [], cos = [], wpm = [];
+
       //Data is represented as an array of {x,y} pairs.
       for (var i = 0; i < 100; i++) {
+        wpm.push({x: i, y: i/8});
         sin.push({x: i, y: Math.sin(i/10)});
         sin2.push({x: i, y: i % 10 == 5 ? null : Math.sin(i/10) *0.25 + 0.5});
         cos.push({x: i, y: .5 * Math.cos(i/10+ 2) + Math.random() / 10});
@@ -62,7 +62,7 @@ export class GraphsComponent implements OnInit {
       //Line chart data should be sent as an array of series objects.
       return [
         {
-          values: sin,      //values - represents the array of {x,y} data points
+          values: wpm,      //values - represents the array of {x,y} data points
           key: 'WPM', //key  - the name of the series.
           color: '#ff7f0e'  //color - optional: choose your own line color.
         },

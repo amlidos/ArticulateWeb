@@ -1,9 +1,11 @@
-<div>
-  <h1>{{userName}}</h1>
-  <ul>
-    <li *ngFor="let speech of speeches">
-      <p *ngIf="userName == speech.user">{{ speech.name }}</p>
-    </li>
-  </ul>
-  <nvd3 [options]="options" [data]="data"></nvd3>
+<div class="main-div">
+  <mat-card class="example-card">
+    <mat-card-title>{{userName}}</mat-card-title>
+    <!-- <ul> -->
+      <div *ngFor="let speech of speeches">
+        <p *ngIf="userName == speech.user">{{ speech.user + ': ' + speech.name }}</p>
+      </div>
+    <!-- </ul> -->
+    <nvd3 [options]="options" [data]="data"></nvd3>
+</mat-card>
 </div>
