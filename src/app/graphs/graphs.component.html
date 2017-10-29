@@ -1,9 +1,17 @@
 <div class="main-div">
   <mat-card class="example-card">
-    <mat-card-title>{{userName}}</mat-card-title>
+    <mat-card-title>Speeches by {{userName}}</mat-card-title>
     <!-- <ul> -->
       <div *ngFor="let speech of speeches">
-        <p *ngIf="userName == speech.user">{{ speech.user + ': ' + speech.name }}</p>
+        <div *ngIf="userName == speech.user">
+          <h2>{{ speech.name }}</h2>
+          <div *ngFor="let recording of recordings; let i = index">
+            <div *ngIf="speech.recordings.includes(recording._id)">
+              <h3>Recording {{i}}</h3>
+              <p>Word Count: {{recording.wordCount}}</p>
+            </div>
+          </div>
+        </div>
       </div>
     <!-- </ul> -->
     <div class="col-md-6">
@@ -16,7 +24,7 @@
                   (chartHover)="chartHovered($event)"
                   (chartClick)="chartClicked($event)"></canvas>
     </div>
-    <div class="col-md-12 text-center" style="margin-top: 10px;height: 50%">
+    <div class="col-md-12 text-center" style="margin-top: 10px;height: 75%">
       <button mat-raised-button (click)="randomizeType()" style="display: inline-block">
         {{lineChartType == "bar" ? "Bar" : "Line"}}
       </button>
