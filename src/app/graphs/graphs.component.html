@@ -6,6 +6,18 @@
         <p *ngIf="userName == speech.user">{{ speech.user + ': ' + speech.name }}</p>
       </div>
     <!-- </ul> -->
-    <nvd3 [options]="options" [data]="data"></nvd3>
+    <div class="col-md-6">
+      <canvas baseChart
+                  [datasets]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [legend]="lineChartLegend"
+                  [options]="lineChartOptions"
+                  [chartType]="lineChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+    </div>
+    <div class="col-md-12 text-center" style="margin-top: 10px;height: 50%">
+      <button mat-raised-button (click)="randomizeType()" style="display: inline-block">Toggle</button>
+    </div>
 </mat-card>
 </div>

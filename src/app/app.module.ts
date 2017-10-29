@@ -11,6 +11,7 @@ import { GraphsComponent } from './graphs/graphs.component';
 import { UserdataService } from './userdata.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ChartsModule } from 'ng2-charts';
 
 // import { mongoose } from 'mongoose';
 
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
     // mongoose
   ],
   providers: [UserdataService],
