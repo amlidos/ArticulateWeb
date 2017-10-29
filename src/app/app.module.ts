@@ -12,6 +12,7 @@ import { UserdataService } from './userdata.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ChartsModule } from 'ng2-charts';
+import { MatButtonToggleModule } from '@angular/material';
 
 // import { mongoose } from 'mongoose';
 
@@ -31,7 +32,8 @@ import { ChartsModule } from 'ng2-charts';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    MatButtonToggleModule
     // mongoose
   ],
   providers: [UserdataService],

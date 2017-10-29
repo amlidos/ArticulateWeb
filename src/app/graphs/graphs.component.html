@@ -17,7 +17,9 @@
                   (chartClick)="chartClicked($event)"></canvas>
     </div>
     <div class="col-md-12 text-center" style="margin-top: 10px;height: 50%">
-      <button mat-raised-button (click)="randomizeType()" style="display: inline-block">Toggle</button>
+      <button mat-raised-button (click)="randomizeType()" style="display: inline-block">
+        {{lineChartType == "bar" ? "Bar" : "Line"}}
+      </button>
     </div>
 </mat-card>
 </div>
