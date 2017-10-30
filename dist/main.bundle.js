@@ -130,25 +130,22 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_nvd3__ = __webpack_require__("../../../../ng2-nvd3/build/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_nvd3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_nvd3__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__welcome_welcome_component__ = __webpack_require__("../../../../../src/app/welcome/welcome.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__graphs_graphs_component__ = __webpack_require__("../../../../../src/app/graphs/graphs.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__userdata_service__ = __webpack_require__("../../../../../src/app/userdata.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_routing_app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ng2_charts__ = __webpack_require__("../../../../ng2-charts/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_ng2_charts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__welcome_welcome_component__ = __webpack_require__("../../../../../src/app/welcome/welcome.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__graphs_graphs_component__ = __webpack_require__("../../../../../src/app/graphs/graphs.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__userdata_service__ = __webpack_require__("../../../../../src/app/userdata.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_routing_app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_charts__ = __webpack_require__("../../../../ng2-charts/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_ng2_charts__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -171,26 +168,26 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_3_ng2_nvd3__["NvD3Component"], __WEBPACK_IMPORTED_MODULE_7__welcome_welcome_component__["a" /* WelcomeComponent */], __WEBPACK_IMPORTED_MODULE_8__graphs_graphs_component__["a" /* GraphsComponent */]
+            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_6__welcome_welcome_component__["a" /* WelcomeComponent */], __WEBPACK_IMPORTED_MODULE_7__graphs_graphs_component__["a" /* GraphsComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["e" /* MatInputModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["f" /* MatMenuModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["c" /* MatCardModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MatButtonModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["g" /* MatToolbarModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["d" /* MatIconModule */],
-            __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_10__app_routing_app_routing_module__["a" /* AppRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_11__angular_common_http__["b" /* HttpClientModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_material__["e" /* MatInputModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_material__["f" /* MatMenuModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_material__["c" /* MatCardModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_material__["a" /* MatButtonModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_material__["g" /* MatToolbarModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_material__["d" /* MatIconModule */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_9__app_routing_app_routing_module__["a" /* AppRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_10__angular_common_http__["b" /* HttpClientModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_12_ng2_charts__["ChartsModule"],
-            __WEBPACK_IMPORTED_MODULE_4__angular_material__["b" /* MatButtonToggleModule */]
+            __WEBPACK_IMPORTED_MODULE_11_ng2_charts__["ChartsModule"],
+            __WEBPACK_IMPORTED_MODULE_3__angular_material__["b" /* MatButtonToggleModule */]
             // mongoose
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_9__userdata_service__["a" /* UserdataService */]],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_8__userdata_service__["a" /* UserdataService */]],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
