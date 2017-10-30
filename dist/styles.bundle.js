@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../material/prebuilt-themes/deeppurple-amber.css"), "");
 
 // module
-exports.push([module.i, "body {\n    background: \"./assets/1511.jpg\";\n}", ""]);
+exports.push([module.i, "body {\r\n    background: \"./assets/1511.jpg\";\r\n}", ""]);
 
 // exports
 
