@@ -33,7 +33,6 @@ import { MatButtonToggleModule } from '@angular/material';
     FormsModule,
     ChartsModule,
     MatButtonToggleModule
-    // mongoose
   ],
   providers: [UserdataService],
   bootstrap: [AppComponent]
